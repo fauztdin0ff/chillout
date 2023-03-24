@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css"
+      integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+   <title>Ресторан Chill Out</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="header__top top-header">
+   <div class="top-header__body _container">
+      <div class="top-header__links">
+         <div class="top-header__link" title="Позвонить"><a href="tel:+998900040870">+998 90 004 08 70</a></div>
+         <div class="top-header__link"><a href="tel:+998900040870">Позвонить</a></div>
+      </div>
+   </div>
+</div>
+<div class="header__middle middle-header">
+   <div class="middle-header__body _container">
+      <div class="middle-header__logo" title="Главная страница">
+         <a href=""><img class="logo-image" src="img/header/logo.png" alt="logo"></a>
+      </div>
+      <div class="middle-header__menu menu">
+         <div class="menu__icon">
+            <span></span>
+         </div>
+         <nav class="menu__body">
+            <ul class="menu__list">
+               <li><a href="index.html" class="menu__link">Главная</a></li>
+               <li><a href="menu.html" class="menu__link">Меню</a></li>
+               <li><a href="#" class="menu__link">Интерьер</a></li>
+               <li><a href="#" class="menu__link">Живой Jazz</a></li>
+               <li><a href="#" class="menu__link">Кейтеринг</a></li>
+               <li><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="middle-header__socials">
+         <a href="https://t.me/ChillOutJazzBar"><img src="img/header/telegram.png" alt="telegram"></a>
+         <a href="https://www.instagram.com/chillout_uz/"><img src="img/header/instagram.png" alt="instagram"></a>
+         <a href="https://www.facebook.com/chillout.tashkent/"><img src="img/header/facebook.png" alt="facebook"></a>
+      </div>
+   </div>
+</div>
+<div class="header__bottom bottom-header">
+   <div class="bottom-header__body _container">
+      <div class="bottom-header__links">
+         <a href="" class="bottom-header__link">График работы <img class="bottom-header__link-img"
+               src="img/header/arrow.png" alt="arrow">
+            <div class="bottom-header__info">
+               <img src="img/header/open.png" alt="open">
+               <p>Мы работаем каждый день!</p>
+               <p>с <span>11:00</span> до <span>23:00</span></p>
+            </div>
+         </a>
+         <a href="" class="bottom-header__link">Расписание выступлений <img class="bottom-header__link-img"
+               src="img/header/arrow.png" alt="arrow">
+            <div class="bottom-header__info-big">
+               <img src="img/header/jazz.png" alt="jazz">
+               <p>Живое выступление музыкантов:</p>
+               <p>каждый день кроме вторника</p>
+               <p>с <span>19:00</span> до <span>22:00</span></p>
+            </div>
+         </a>
+      </div>
+   </div>
+</div>
+      <main>
+         <div class="menu_body _container">
+            <div class="menu__title title">
+               <h1>Меню</h1>
+            </div>
+            <div class="tabs">
+               <div class="tab" data-tab="tab1">Кухня</div>
+               <div class="tab" data-tab="tab2">Бар</div>
+            </div>
+
+            <div class="tab-content" id="tab1">
+               <div class="subtabs">
+                  <div class="subtab active" data-tab="subtab1">Салаты</div>
+                  <div class="subtab" data-tab="subtab2">Закуски</div>
+                  <div class="subtab" data-tab="subtab3">Супы</div>
+                  <div class="subtab" data-tab="subtab4">Основные блюда</div>
+                  <div class="subtab" data-tab="subtab5">Паста</div>
+                  <div class="subtab" data-tab="subtab6">Гарниры</div>
+                  <div class="subtab" data-tab="subtab7">Десерты</div>
+               </div>
+            </div>
+            <div class="tab-content" id="tab2">
+               <div class="subtabs">
+                  <div class="subtab" data-tab="subtab8">коктейли</div>
+                  <div class="subtab" data-tab="subtab9">б/а коктейли</div>
+                  <div class="subtab" data-tab="subtab10">чай</div>
+                  <div class="subtab" data-tab="subtab11">кофе</div>
+                  <div class="subtab" data-tab="subtab12">виски,бурбон</div>
+                  <div class="subtab" data-tab="subtab13">коньяк,бренди</div>
+                  <div class="subtab" data-tab="subtab14">ром,текила,джин</div>
+                  <div class="subtab" data-tab="subtab15">вино</div>
+                  <div class="subtab" data-tab="subtab16">водка</div>
+                  <div class="subtab" data-tab="subtab17">пиво</div>
+                  <div class="subtab" data-tab="subtab18">другой алкоголь</div>
+                  <div class="subtab" data-tab="subtab19">напитки</div>
+               </div>
+            </div>
+            <!--КУХНЯ-->
+            <!--САЛАТЫ-->
+            <div class="subtab-content" id="subtab1">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/sirbrinagrile.jpg" alt="Салат бри на гриле" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Салат бри на гриле</p>
+                           <p class="slide-card__price">99 000 сум</p>
+                           <p class="slide-card__descr">(рукола, клубника, яблоко, сыр бри)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/cezarclass.jpg" alt="Цезарь классик" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Цезарь классик</p>
+                           <p class="slide-card__price">68 000 сум</p>
+                           <p class="slide-card__descr">(айсберг, куриное филе, крутоны, помидоры черри, соус цезарь)
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/rukolalosos.jpg" alt="Рукола с лососем" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Рукола с лососем</p>
+                           <p class="slide-card__price">78 000 сум</p>
+                           <p class="slide-card__descr">(лосось с/c, рукола, крем-чиз, кунжут)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/kras.jpg" alt="КРАС" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">КРАС</p>
+                           <p class="slide-card__price">68 000 сум</p>
+                           <p class="slide-card__descr">(крем-чиз, рукола, запеченая свекла, апельсин, кешью)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/baklajan.jpg" alt="Хрустящие баклажаны" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Хрустящие баклажаны</p>
+                           <p class="slide-card__price">68 000 сум</p>
+                           <p class="slide-card__descr">(шпинат, обжаренные баклажаны, черри, моцарелла, соус sweet
+                              chilly)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/alyagrek.jpg" alt="Аля грек" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Аля грек</p>
+                           <p class="slide-card__price">72 000 сум</p>
+                           <p class="slide-card__descr">(помидоры, огурцы, маслины, оливки, болгарский перец, микс
+                              салат, сыр
+                              фета)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/salat/cezarmore.jpg" alt="Цезарь с креветками" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Цезарь с креветками</p>
+                           <p class="slide-card__price">87 000 сум</p>
+                           <p class="slide-card__descr">(айсберг, тигровые креветки, крутоны, черри, пармезан, соус
+                              цезарь)</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+            <!--ЗАКУСКИ-->
+            <div class="subtab-content" id="subtab2">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/vinplat.jpg" alt="Винное плато" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Винное плато</p>
+                           <p class="slide-card__price">90 000 сум сум</p>
+                           <p class="slide-card__descr">(пармезан, дорблю, гауда, фета, бри, мёд горный)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/myasnnar.jpg" alt="Мясная нарезка" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Мясная нарезка</p>
+                           <p class="slide-card__price">90 000 сум</p>
+                           <p class="slide-card__descr">(казы, мясной рулет, куриный рулет, бастурма, индейка)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/kolbaski.jpg" alt="Колбаски с гарликами" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Колбаски с гарликами</p>
+                           <p class="slide-card__price">60 000 сум</p>
+                           <p class="slide-card__descr">(жаренные колбаски с соусом и гарликами)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/yazshpinat.jpg" alt="Язык со шпинатом" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Язык со шпинатом</p>
+                           <p class="slide-card__price">75 000 сум</p>
+                           <p class="slide-card__descr">(говяжий язык в сливочном соусе со шпинатом)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/krilishki.jpg" alt="Крылышки" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Крылышки</p>
+                           <p class="slide-card__price">68 000 сум</p>
+                           <p class="slide-card__descr">(жареные крылышки с соусом BBQ)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/brusklos.jpg" alt="Брускетта с лососем" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Брускетта с лососем</p>
+                           <p class="slide-card__price">55 000 сум</p>
+                           <p class="slide-card__descr">(слабосоленый лосось, крем-чиз, рукола)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/bruskvyaltom.jpg"
+                              alt="Брускетта с вял томатами" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Брускетта с вял томатами</p>
+                           <p class="slide-card__price">40 000 сум</p>
+                           <p class="slide-card__descr">(вяленые томаты, рукола, соус песто)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/baransemechki.jpg" alt="Бараньи семечки" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Бараньи семечки</p>
+                           <p class="slide-card__price">62 000 сум</p>
+                           <p class="slide-card__descr">(жареные бараньи семечки с копченой паприкой)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/zakuska/marinass.jpg" alt="Маринованное ассорти" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Маринованное ассорти</p>
+                           <p class="slide-card__price">62 000 сум</p>
+                           <p class="slide-card__descr">(шиитаке, корнишоны, шампиньоны, цицак, черри)</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+            <!--СУПЫ-->
+            <div class="subtab-content" id="subtab3">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/soup/chechev.jpg" alt="Чечевичный крем-суп" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Чечевичный крем-суп</p>
+                           <p class="slide-card__price">29 000 сум</p>
+                           <p class="slide-card__descr">(крем-суп из чечевицы с крем-чизом и крутонами)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/soup/gribnoy.jpg" alt="Грибной крем-суп" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Грибной крем-суп</p>
+                           <p class="slide-card__price">29 000 сум</p>
+                           <p class="slide-card__descr">(грибной крем-суп из шампиньонов с крем-чизом и крутонами)
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/soup/morepro.jpg" alt="Суп с морепродуктами" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Суп с морепродуктами</p>
+                           <p class="slide-card__price">110 000 сум</p>
+                           <p class="slide-card__descr">(сливочный суп с тигровыми креветками, мидиями, лососем и
+                              кальмаром)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/soup/gaspacho.jpg" alt="Гаспачо" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Гаспачо</p>
+                           <p class="slide-card__price">29 000 сум</p>
+                           <p class="slide-card__descr">(холодный томатный крем-суп)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/soup/shpinat.jpg"
+                              alt="Шпинатный крем-суп с моцареллой" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Шпинатный с моцареллой</p>
+                           <p class="slide-card__price">39 000 сум</p>
+                           <p class="slide-card__descr">(крем-суп из шпината с моцареллой, песто и крутонами)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/soup/kuriniy.jpg" alt="Куриный супчик" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Куриный супчик</p>
+                           <p class="slide-card__price">29 000 сум</p>
+                           <p class="slide-card__descr">(куриный супчик с лапшой)</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+            <!--ОСНОВНЫЕ БЛЮДА-->
+            <div class="subtab-content" id="subtab4">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/classic.jpg" alt="Стейк классический" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Стейк классический</p>
+                           <p class="slide-card__price">140 000 сум</p>
+                           <p class="slide-card__descr">(стейк из бонфиле, кабачок, пак чой, соус демиглас)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/ruletkur.jpg"
+                              alt="Рулеты из курицы с грибным соусом" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Рулеты из курицы с грибным соусом</p>
+                           <p class="slide-card__price">75 000 сум</p>
+                           <p class="slide-card__descr">(куриные рулеты с сыром фета, боолгарским перцем в
+                              сливочно-грибном
+                              соусе с салатом микс)
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/steyktune.jpg" alt="Стейк из тунца" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Стейк из тунца</p>
+                           <p class="slide-card__price">135 000 сум</p>
+                           <p class="slide-card__descr">(тунец на гриле со спаржей)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/pepper.jpg" alt="Пеппер стейк" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Пеппер стейк</p>
+                           <p class="slide-card__price">140 000 сум</p>
+                           <p class="slide-card__descr">(стейк из бонфиле, сырный сендвич, соус демиглас)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/ribay.jpg"
+                              alt="Рибай Prime из мраморной говядины" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Рибай Prime из мраморной говядины</p>
+                           <p class="slide-card__price">240 000 сум</p>
+                           <p class="slide-card__descr"></p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/bargol.jpg" alt="Баранья голень" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Баранья голень</p>
+                           <p class="slide-card__price">173 000 сум</p>
+                           <p class="slide-card__descr">(голень молодого барашка, картофельное пюре со шпинатом, соус
+                              демиглас)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/sibas.jpg"
+                              alt="Сибас на подушке из дикого риса" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Сибас на подушке из дикого риса</p>
+                           <p class="slide-card__price">220 000 сум</p>
+                           <p class="slide-card__descr">(сибас фаршированный овощным рататуем и диким рисом)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/doradogril.jpg" alt="Дорадо на гриле" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Дорадо на гриле</p>
+                           <p class="slide-card__price">240 000 сум</p>
+                           <p class="slide-card__descr">(королевская рыба подается целиком)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/steyklos.jpg" alt="Стейк из лосося" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Стейк из лосося</p>
+                           <p class="slide-card__price">173 000 сум</p>
+                           <p class="slide-card__descr">(норвежский лосось, пак чой, сливочный соус)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/medal.jpg"
+                              alt="Медальоны в трюфельном соусе" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Медальоны в трюфельном соусе</p>
+                           <p class="slide-card__price">135 000 сум</p>
+                           <p class="slide-card__descr">(медальоны из бонфиле, салат микс, соус трюфельный)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/osnovnie/ossobuko.jpg" alt="Оссобуко" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Оссобуко</p>
+                           <p class="slide-card__price">135 000 сум</p>
+                           <p class="slide-card__descr"></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+            <!--ПАСТА-->
+            <div class="subtab-content" id="subtab5">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/pasta/alfredo.jpg" alt="Альфредо" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Альфредо</p>
+                           <p class="slide-card__price">65 000 сум</p>
+                           <p class="slide-card__descr">(фетучини, куриная грудка, шампиньоны, сливочный соус, пармезан)
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/pasta/cheese.jpg" alt="4 сыра" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">4 сыра</p>
+                           <p class="slide-card__price">73 000 сум</p>
+                           <p class="slide-card__descr">(пенне, гауда, бри, дорблю, пармезан, сливки)
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/pasta/moreprod.jpg" alt="Фетучини с морепродуктами" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Фетучини с морепродуктами</p>
+                           <p class="slide-card__price">120 000 сум</p>
+                           <p class="slide-card__descr">(фетучини, тигровые креветки, мидии, лосось, кальмар, пармезан)
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/pasta/beliegrib.jpg" alt="Паста с белыми грибами" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Паста с белыми грибами</p>
+                           <p class="slide-card__price">75 000 сум</p>
+                           <p class="slide-card__descr">(фетучини, белые грибы, шампиньоны, сливки)</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/pasta/bolon.jpg" alt="Болоньезе" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Болоньезе</p>
+                           <p class="slide-card__price">67 000 сум</p>
+                           <p class="slide-card__descr">(спагетти, соус болоньезе)</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+            <!--ГАРНИРЫ-->
+            <div class="subtab-content" id="subtab6">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/garnir/fri.jpg" alt="Фри" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Фри</p>
+                           <p class="slide-card__price">20 000 сум</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/garnir/ovochigril.jpg" alt="Овощи гриль" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Овощи гриль</p>
+                           <p class="slide-card__price">35 000 сум</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/garnir/dikiyris.jpg" alt="Дикий рис" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Дикий рис</p>
+                           <p class="slide-card__price">30 000 сум</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/garnir/fri.jpg" alt="Айдахо" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Айдахо</p>
+                           <p class="slide-card__price">20 000 сум</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/garnir/pyureshpinat.jpg" alt="Пюре со шпинатом" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Пюре со шпинатом</p>
+                           <p class="slide-card__price">25 000 сум</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/garnir/risovochi.jpg" alt="Рис с овощами" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Рис с овощами</p>
+                           <p class="slide-card__price">20 000 сум</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+            <!--ДЕСЕРТЫ-->
+            <div class="subtab-content" id="subtab7">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/desert/fondan.jpg" alt="Шоколадный фондан" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Шоколадный фондан</p>
+                           <p class="slide-card__price">55 000 сум</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide slide-card">
+                        <div class="slide-card__image">
+                           <img loading="lazy" src="img/kitchen/desert/shtrudel.jpg" alt="Штрудель" />
+                        </div>
+                        <div class="slide-card__text">
+                           <p class="slide-card__dish">Штрудель</p>
+                           <p class="slide-card__price">50 000 сум</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                  <button class="dynamic-gallery-button"></button>
+               </div>
+               <div class="sw-button-prev"><img src="img/nextbtn.png" alt="next"></div>
+               <div class="sw-button-next"><img src="img/nextbtn.png" alt="next"></div>
+            </div>
+
+            <!--БАР-->
+            <div class="subtab-content" id="subtab8">
+               Hennessy VS
+            </div>
+            <div class="subtab-content" id="subtab9">
+               Аля грек
+            </div>
+            <div class="subtab-content" id="subtab10">
+               Классик стейк
+            </div>
+            <div class="subtab-content" id="subtab11">
+               Chivas 12
+            </div>
+            <div class="subtab-content" id="subtab12">
+               Hennessy VS
+            </div>
+            <div class="subtab-content" id="subtab13">
+               Аля грек
+            </div>
+            <div class="subtab-content" id="subtab14">
+               Классик стейк
+            </div>
+            <div class="subtab-content" id="subtab15">
+               Chivas 12
+            </div>
+            <div class="subtab-content" id="subtab16">
+               Hennessy VS
+            </div>
+            <div class="subtab-content" id="subtab17">
+               Chivas 12
+            </div>
+            <div class="subtab-content" id="subtab18">
+               Hennessy VS
+            </div>
+            <div class="subtab-content" id="subtab19">
+               Hennessy VS
+            </div>
+         </div>
+         <p class="press-photo">* нажмите на фото для увеличения</p>
+         <div class="menu__rullers">
+
+         </div>
+      </main>
+
+
+      <footer class="footer">
+   <div class="footer__body _container">
+      <div class="footer__top top-footer">
+         <div class="top-footer__logo"><a href="" title="На главную"><img src="img/header/logo.png" alt="logo"></a>
+         </div>
+         <div class="top-footer__menu">
+            <ul class="top-footer__list">
+               <li><a class="top-footer__link" href="menu.html">Главная</a></li>
+               <li><a class="top-footer__link" href="">Меню</a></li>
+               <li><a class="top-footer__link" href="">Интерьер</a></li>
+               <li><a class="top-footer__link" href="">Живой Jazz</a></li>
+               <li><a class="top-footer__link" href="">Кейтеринг</a></li>
+               <li><a class="top-footer__link" href="">Контакты</a></li>
+            </ul>
+         </div>
+         <div class="top-footer__telephone" title="Позвонить">
+            <a href="tel:+998900040870"><img src="img/maps/tel.png" alt="">+998 90 004 08 70</a>
+            <a href="">+998 90 119 26 20</a>
+         </div>
+      </div>
+      <div class="footer__bottom bottom-footer">
+         <div class="bottom-footer__socials">
+            <p>Мы в соц. сетях</p>
+            <div class="bottom-footer__links">
+               <a href="https://t.me/ChillOutJazzBar" title="+998900040870"><img src="img/header/telegram.png"
+                     alt="telegram"></a>
+               <a href="https://www.facebook.com/chillout.tashkent/" title="chillout.tashkent"><img
+                     src="img/header/facebook.png" alt="facebook"></a>
+               <a href="https://www.instagram.com/chillout_uz/" title="chillout_uz"><img src="img/header/instagram.png"
+                     alt="instagram"></a>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <div class="copyright__company">
+            <p>© Chill Out. 2021-2023. <span>Официальный сайт</span></p>
+         </div>
+         <div class="copyright__policy">
+            <a href="">Политика конфиденциальности</a>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+
+   <script src="js/app.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"
+      integrity="sha512-dSI4QnNeaXiNEjX2N8bkb16B7aMu/8SI5/rE6NIa3Hr/HnWUO+EAZpizN2JQJrXuvU7z0HTgpBVk/sfGd0oW+w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
