@@ -1470,6 +1470,7 @@ body._touch .bottom-header__info-big {
   border-radius: 4px;
   transition: all 0.3s ease 0s;
   white-space: nowrap;
+  text-transform: lowercase;
   font-size: 15px;
   font-weight: 300;
 }
@@ -1583,6 +1584,13 @@ body._touch .bottom-header__info-big {
   height: 100%;
   transform: scale(0.7);
 }
+@media (max-width: 600px) {
+  .sw-button-prev,
+  .sw-button-next {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 .sw-button-prev {
   left: -30px;
@@ -1615,12 +1623,202 @@ body._touch .bottom-header__info-big {
 }
 
 .press-photo {
-  text-align: center;
-  font-size: 14px;
-  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #384255;
+  font-size: 16px;
 }
 @media (max-width: 1200px) {
   .press-photo {
-    font-size: calc(10px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(10px + 6 * ((100vw - 320px) / 880));
   }
+}
+.press-photo img {
+  width: 7px;
+  height: 7px;
+  transform: translateY(2px);
+}
+.press-photo:hover {
+  text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.menu__more-info {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  .menu__more-info {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+.menu__top-dish {
+  flex: 0 1 50%;
+}
+@media (max-width: 768px) {
+  .menu__top-dish {
+    flex: 0 1 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.menu__delivery {
+  flex: 0 1 49%;
+}
+
+.top-dish {
+  background: url("../img/kitchen/assortiBig.png") left top/contain no-repeat;
+  max-width: 640px;
+  min-height: 350px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .top-dish {
+    min-height: 280px;
+    background: url("../img/kitchen/assortiBig.png") left top/contain no-repeat;
+  }
+}
+@media (max-width: 500px) {
+  .top-dish {
+    min-height: 250px;
+    background: url("../img/kitchen/assortiBig.png") left top/100% 100% no-repeat;
+  }
+}
+@media (max-width: 420px) {
+  .top-dish {
+    min-height: 220px;
+  }
+}
+.top-dish__text {
+  padding-left: 20px;
+  width: 45%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: "Inter";
+}
+@media (max-width: 600px) {
+  .top-dish__text {
+    min-height: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .top-dish__text {
+    min-height: 250px;
+    padding: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .top-dish__text {
+    min-height: 220px;
+  }
+}
+.top-dish__text img {
+  width: 50px;
+}
+@media (max-width: 600px) {
+  .top-dish__text img {
+    width: 20px;
+  }
+}
+.top-dish__text p:nth-child(1) {
+  font-size: 20px;
+  display: flex;
+  align-items: end;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .top-dish__text p:nth-child(1) {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 600px) {
+  .top-dish__text p:nth-child(1) {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 5px;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 380px) {
+  .top-dish__text p:nth-child(1) {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .top-dish__text p:nth-child(1) {
+    margin-bottom: 30px;
+  }
+}
+.top-dish__text p:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .top-dish__text p:nth-child(2) {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+  }
+}
+.top-dish__text p:nth-child(3) {
+  font-size: 20px;
+  text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .top-dish__text p:nth-child(3) {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+.delivery {
+  padding: 15px;
+}
+.delivery p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.delivery__chillout {
+  flex: 0 1 50%;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.delivery__chillout a {
+  color: #384255;
+  display: block;
+  padding-left: 30px;
+}
+.delivery__chillout a:hover {
+  text-decoration: underline;
+}
+.delivery__chillout a:nth-child(2) {
+  background: url("../img/delivery/tel.png") left/contain no-repeat;
+  margin-bottom: 15px;
+}
+.delivery__chillout a:last-child {
+  background: url("../img/delivery/telegram.png") left/contain no-repeat;
+}
+.delivery__other img {
+  width: 30px;
+}
+.delivery__other a {
+  color: #384255;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.delivery__other a:hover {
+  transform: scale(1.03);
+}
+.delivery__other a:not(:last-child) {
+  margin-right: 20px;
 }
