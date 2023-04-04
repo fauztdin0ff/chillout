@@ -741,6 +741,7 @@ body._touch .bottom-header__info-big {
 
 .home-decor {
   flex: 0 1 50%;
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .home-decor {
@@ -754,6 +755,7 @@ body._touch .bottom-header__info-big {
   align-items: end;
   justify-content: end;
   text-align: right;
+  pointer-events: none;
 }
 .home-decor-item img {
   max-width: 90%;
@@ -1949,4 +1951,329 @@ body._touch .bottom-header__info-big {
 .lightgallery-int img:hover {
   transform: scale(1.02);
   cursor: zoom-in;
+}
+
+/*--------------------------------------------LIVE JAZZ---------------------------------------------*/
+.livejazz {
+  background-color: #e9eaef;
+  padding: 0 0 50px 0;
+}
+.livejazz__cover {
+  text-align: right;
+  position: relative;
+}
+.livejazz__cover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+.livejazz__cover img {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+  border-radius: 0px 0px 15px 0px;
+}
+.livejazz__cards {
+  display: flex;
+  margin-top: -170px;
+  position: relative;
+  z-index: 1;
+  padding-left: 100px;
+}
+@media (max-width: 1200px) {
+  .livejazz__cards {
+    margin-top: calc(0px + -170 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 480px) {
+  .livejazz__cards {
+    margin-top: 20px;
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+.livejazz__card {
+  max-width: 275px;
+}
+@media (max-width: 480px) {
+  .livejazz__card {
+    max-width: 80%;
+  }
+}
+.card-livejazz {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  color: #363948;
+  padding: 15px;
+  position: relative;
+  display: none;
+}
+.card-livejazz.active {
+  display: block;
+}
+.card-livejazz__day {
+  font-size: 14px;
+  font-weight: 300;
+}
+.card-livejazz__band {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.card-livejazz__image img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.card-livejazz__live-icon {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #f53b49;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+  animation: live 1.5s linear 0s infinite;
+}
+.card-livejazz__live-icon span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.day-today {
+  text-decoration: underline;
+}
+
+@keyframes live {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.schedule {
+  margin-bottom: 50px;
+}
+.schedule__title {
+  margin: 30px 0;
+}
+.schedule__days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schedule__day {
+  flex: 0 1 33%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 235px;
+}
+.schedule__day p {
+  position: relative;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.schedule__day p::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+}
+@media (max-width: 482px) {
+  .schedule__day p::after {
+    width: 100%;
+  }
+}
+.schedule__day:not(:last-child) {
+  margin-bottom: 15px;
+}
+.schedule__value {
+  width: 30px;
+  height: 30px;
+  background-color: #f53b49;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 10px;
+  padding: 3px 5px;
+}
+
+/*---------------------------ВИДЕОГАЛЕРЕЯ-----------------------------*/
+.gallery-jazz__title {
+  margin-bottom: 25px;
+}
+.gallery-jazz__title h3 {
+  font-size: 24px;
+}
+@media (max-width: 1200px) {
+  .gallery-jazz__title h3 {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+.lightgallery-video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+@media (max-width: 600px) {
+  .lightgallery-video {
+    justify-content: center;
+  }
+}
+
+.video-poster-link {
+  flex: 0 1 150px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .video-poster-link {
+    flex: 0 1 100px;
+  }
+}
+.video-poster-link:hover {
+  cursor: pointer;
+}
+.video-poster-link img {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.play-button {
+  width: 40px;
+  height: 40px;
+  background: url("../img/play.png") center/contain no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vjs-big-play-button {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .lg-video-cont {
+    height: 80vh !important;
+  }
+}
+/*--------------------------------------------КЕЙТЕРИНГ---------------------------------------------*/
+.catering {
+  padding-bottom: 30px;
+  background-color: #f7f7f7;
+}
+.catering__cover {
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+}
+.catering__cover img {
+  width: 100%;
+}
+.catering__content {
+  box-shadow: 0 0 5px #ccc;
+  background: url("../img/catering/list.png") right/contain no-repeat;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 0 #ccc;
+}
+@media (max-width: 1200px) {
+  .catering__content {
+    padding: calc(10px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 650px) {
+  .catering__content {
+    background: url("../img/catering/list.png") right/30% no-repeat;
+  }
+}
+@media (max-width: 500px) {
+  .catering__content {
+    background: url("../img/catering/list.png") top right/30% no-repeat;
+  }
+}
+.catering__title {
+  margin-bottom: 50px;
+}
+.catering__text {
+  color: #2a2c38;
+  font-weight: 300;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .catering__text {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .catering__text {
+    width: 100%;
+  }
+  .catering__text p:first-child {
+    width: 80%;
+  }
+}
+.catering__text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.catering__text p:nth-child(2) {
+  margin-bottom: 10px;
+}
+@media (max-width: 650px) {
+  .catering__text p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .catering__text p:nth-child(2) {
+    margin-bottom: 5px;
+  }
+  .catering__text {
+    font-size: 14px;
+  }
+}
+.catering__list {
+  margin-bottom: 15px;
+}
+.catering__list li {
+  background: url("../img/catering/g.png") left/15px 15px no-repeat;
+  padding-left: 25px;
 }
